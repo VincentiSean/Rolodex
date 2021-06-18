@@ -37,7 +37,7 @@
         ) {
             
             $sql = "INSERT INTO customerinfo (first_name, last_name, street_address, zip, city, us_state, phone, email, preferred_contact) 
-                        VALUES ('$firstName', '$lastName', '$address', '$city', '$state', '$phone', '$email', '$preferredContact')";
+                        VALUES ('$firstName', '$lastName', '$address', '$zipCode', '$city', '$state', '$phone', '$email', '$preferredContact');";
             echo $sql;
             if (mysqli_query($GLOBALS['con'], $sql)) {
                 echo "Yay!";
