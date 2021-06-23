@@ -1,7 +1,7 @@
 <?php
     function createDB() {
-        $server = "localhost";
-        $user = "root";
+        $server = "";
+        $user = "";
         $pass = "";
         $db="rolodex";
 
