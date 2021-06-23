@@ -1,0 +1,250 @@
+:root {
+    --sea-green: #6BC4B5;
+    
+}
+
+/* Set a lot of components to display 'none' */
+#create-container,
+#edit-container, 
+#notepad,
+#user-id-input,
+#invoice-container,
+#add-invoice-input-container,
+#note-container,
+#note-btn-div,
+#alert-update-div {
+    display: none;
+}
+
+body {
+    background: rgb(45,48,80);
+    background: linear-gradient(45deg, rgba(45,48,80,1) 0%, rgba(61,66,117,1) 35%, rgba(62,121,141,1) 100%);
+
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+}
+
+header {
+    margin: 0 0 30px;
+    padding: 10px 0 0;
+}
+
+#logo-link {
+    color: var(--sea-green);;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 20px;
+}
+
+#search-container {
+    margin: 0 auto;
+    width: 75%;
+}
+
+#client-search {
+    font-size: 20px;
+    height: 50px;
+    padding: 12px 40px;
+}
+
+#filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 75%;
+}
+
+#filter-label {
+    color: #ddd;
+    font-size: 20px;
+    margin: 5px 10px 0 0;
+}
+
+.filter-btn {
+    background-color: #3f869e;
+    margin: 15px 10px 0;
+    padding: 12px 15px;
+}
+
+#customer-display {
+    margin: 50px 0 30px;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+#table {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+#customer-display td,
+#customer-display th {
+    white-space: nowrap;
+}
+
+.columns {
+    margin: 0;
+}
+
+#create-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#create-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+#create-label {
+    color: #6BC4B5;
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0 0 20px;
+}
+
+.create-inputs {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    color: #aaa;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 25px;
+    padding: 10px;
+    outline: none;
+    width: 95%;
+}
+
+.create-inputs:focus {
+    border-bottom: 2px solid #4FAE9E;
+    color: var(--sea-green);
+}
+
+#edit-container {
+    flex-direction: column;
+    margin: 75px;
+}
+
+#invoice-form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center; 
+    width: 100%;
+}
+
+.invoice-labels {
+    color: #ddd;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px;
+}
+
+#invoice-top-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#service-select,
+#fully-paid,
+#invoice-due-date {
+    margin: 0 10px 0 0;
+    width: 25%
+}
+
+#submit-invoice,
+#hide-invoice {
+    width: 200px;
+}
+
+#submit-invoice {
+    margin: 0 25px 0 0;
+}
+
+#invoice-date-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 30px 0;
+    width: 100%;
+}
+
+#invoice-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-center;
+}
+
+#invoice-container {
+    margin: 35px 0;
+}
+
+#invoice-table {
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+#note-title {
+    color: #ddd;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 30px 0 0;
+}
+
+.note-text {
+    color: #fff;
+    font-size: 16px;
+    margin: 10px 0 0 20px;
+}
+
+#note-btn-div {
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+#cancel-note-btn,
+#submit-note-btn {
+    margin: 20px 0 0;
+}
+
+#alert-update-div {
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 5;
+}
+
+#alert-dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    height: 150px;
+    width: 225px;
+}
+
+#alert-dialog h4 {
+    color: #565b93;
+    font-weight: 600;
+    margin: 0 0 35px;
+}
