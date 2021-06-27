@@ -27,6 +27,7 @@
     <main class="container">
         <div class="main-container">
             
+            <!-- Filter Form -->
             <form id="filter-form" method="POST" onSubmit="showTable()">
                 <div id="search-container" class="control has-icons-left">
                     <input class="input" type="search" name="clientSearch" value="" id="client-search" placeholder="Search by client name">
@@ -36,15 +37,18 @@
                 </div>
                 <div id="filter-container">
                     <label id="filter-label">Filters</label>
-                        <!-- Add filter buttons -->
-                    <button class="filter-btn button is-info" name='filter' value='first_name'>First Name</button>
-                    <button class="filter-btn button is-info" name='filter' value='last_name'>Last Name</button>
-                    <button class="filter-btn button is-info" name='filter' value='id'>Customer ID</button>
+                    <!-- Add filter buttons -->
+                    <div id="filter-btn-container">
+                        <button class="filter-btn button is-info" name='filter' value='first_name'>First Name</button>
+                        <button class="filter-btn button is-info" name='filter' value='last_name'>Last Name</button>
+                        <button class="filter-btn button is-info" name='filter' value='id'>Customer ID</button>
+                    </div>
                 </div>
             </form>
             
+            <!-- Customer Information Table -->
             <div id="customer-display" class="table-container">
-                <table id="table" class="table is-hoverable">
+                <table id="table" class="table is-hoverable is-fullwidth">
                     <thead>
                         <tr>
                             <th>ID</th>
@@ -218,6 +222,7 @@
     <script src="https://use.fontawesome.com/5bfa6555cb.js"></script>
 
     <!-- Local JS files -->
+    <script type="text/javascript" src="./js/helperFunctions.js"></script>
     <script type="text/javascript" src="./js/postCalls.js"></script>
     <script type="text/javascript" src="./js/index.js"></script>
 </body>
